@@ -64,6 +64,19 @@ alwaysApply: true
 - **Test reports**: Generate clear, actionable test reports for all modifications
 - **Validation process**: Validate that modifications work as expected and meet requirements
 
+## Self-Compliance Rule (CRITICAL)
+- **MANDATORY**: ALWAYS apply ALL mandatory rules to EVERY conversation without exception
+- **Self-verification**: Before responding to any request, verify that all mandatory rules are being followed
+- **Rule application check**: 
+  - ✅ Conversation log file created at conversation start
+  - ✅ All terminal commands documented
+  - ✅ Project documentation updated if needed
+  - ✅ Wording guidelines checked before creating text
+  - ✅ Testing and validation applied to all modifications
+- **Consistency requirement**: Never violate rules that have been established as mandatory
+- **Error prevention**: If any mandatory rule is not being followed, STOP and correct immediately
+- **Accountability**: Take full responsibility for applying all rules consistently
+
 ## Automatic Reminder
 - These rules must be applied to EVERY conversation, without exception
 - If the log file doesn't exist, it's an error that must be corrected immediately

@@ -1,0 +1,62 @@
+# Cursor AI Rules Configuration
+
+This project uses a modular rules system for AI-assisted development with Cursor.
+
+## Rule Files Structure
+
+- **mandatory-project-rules.md**: Core mandatory rules for all projects
+- **code-quality-standards.md**: Code quality and development standards
+- **naming-conventions.md**: Comprehensive naming conventions guide
+
+## Rule Application
+
+All rules are automatically applied to every conversation and code modification.
+
+## Template Usage
+
+This is a template project structure that can be adapted for different types of projects:
+- Web applications
+- Mobile applications  
+- APIs and microservices
+- Desktop applications
+- Libraries and packages
+
+## Quick Start
+
+1. Copy this `.cursor/rules/` directory to your new project
+2. Update `docs/internal/ai/wording.md` with your project details
+3. Adapt the rules to your specific technology stack
+4. Update `docs/internal/ai/project.md` and `dev.md` with your project information
+
+## Rule Categories
+
+### Mandatory Rules (Always Applied)
+- Date handling
+- Conversation logging
+- Command execution logging
+- Project documentation
+- Wording and branding
+- Testing and validation
+- Self-compliance
+
+### Quality Standards (Applied During Development)
+- Naming conventions
+- Code duplication prevention
+- Code similarity detection
+- Analysis and research
+- Standards compliance
+- Error handling
+- Documentation
+- Performance optimization
+
+## Customization
+
+Rules can be customized per project by:
+1. Modifying the specific rule files
+2. Adding project-specific rules
+3. Disabling certain rules if not applicable
+4. Adding technology-specific conventions
+
+---
+*Template version: 1.0*
+*Last updated: 2025-10-01*

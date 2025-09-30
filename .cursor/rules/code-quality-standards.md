@@ -5,8 +5,8 @@ alwaysApply: true
 # Code Quality and Development Standards Rules
 
 ## Naming Convention Rule
-- **MANDATORY**: Follow comprehensive naming conventions as defined in `naming-conventions.mdc`
-- **Reference**: See `.cursor/rules/naming-conventions.mdc` for detailed naming patterns and guidelines
+- **MANDATORY**: Follow comprehensive naming conventions as defined in `naming-conventions.md`
+- **Reference**: See `.cursor/rules/naming-conventions.md` for detailed naming patterns and guidelines
 - **Core principles**: Use clear, descriptive, and consistent naming conventions
 - **Language-specific**: Follow conventions appropriate for the technology stack
 - **Consistency**: Maintain naming consistency throughout the project
