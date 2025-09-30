@@ -1,0 +1,60 @@
+---
+alwaysApply: true
+---
+
+# Mandatory Project Rules
+
+## Date Rule
+- When it is necessary to obtain the current date, use the command `date`.
+
+## Conversation Logging Rule (CRITICAL)
+- **MANDATORY**: Always save our conversation in a markdown file located at 'docs/internal/ai/chat/<date>-subject.md'.
+- **File naming format**: YYYY-MM-DD-subject-description.md
+- **Required content**: Conversation summary, actions performed, decisions made
+- **Timing**: Create the file at the beginning of each new conversation
+- **Verification**: Always check that the docs/internal/ai/chat/ directory exists before creating the file
+- **NEW CONVERSATION RULE**: If the subject changes or a new conversation starts, create a NEW file with a NEW name
+- **File uniqueness**: Each conversation must have its own unique file - never append to existing conversation files
+- **Subject identification**: Use descriptive subject names that clearly identify the conversation topic
+
+## Command Execution Logging Rule (CRITICAL)
+- **MANDATORY**: Document ALL terminal commands executed during the conversation
+- **Required documentation**: 
+  - Command executed (exact syntax)
+  - Purpose/explanation of the command
+  - Exit code and output (if relevant)
+  - Any errors encountered
+- **Location**: Include command logs in the conversation markdown file
+- **Format**: Use code blocks with command explanations
+- **Timing**: Log commands immediately after execution
+
+## Project Documentation Rule (CRITICAL)
+- **MANDATORY**: Maintain comprehensive project documentation
+- **Global project view**: Keep `docs/internal/ai/project.md` updated with:
+  - Project overview and purpose
+  - Architecture and structure
+  - Key features and components
+  - Dependencies and technologies
+  - Current status and roadmap
+- **Technical project view**: Keep `docs/internal/ai/dev.md` updated with:
+  - Technical architecture details
+  - Development setup and environment
+  - Code organization and patterns
+  - API documentation and interfaces
+  - Performance considerations and optimizations
+- **Update frequency**: Update documentation whenever significant changes occur
+- **Verification**: Always check that documentation files exist and are current
+
+## Project Wording and Branding Rule (CRITICAL)
+- **MANDATORY**: Use centralized wording and branding guidelines
+- **Wording file**: All URLs, names, descriptions, and copy must be defined in `docs/internal/ai/wording.md`
+- **Brand consistency**: Follow the established brand voice, tone, and terminology
+- **URL management**: All URLs and links must be referenced from the wording file
+- **Copy standards**: Use standardized phrases, button labels, and messages
+- **Update process**: Update wording file before implementing new copy or changing existing text
+- **Verification**: Always check wording file before creating new user-facing text
+
+## Automatic Reminder
+- These rules must be applied to EVERY conversation, without exception
+- If the log file doesn't exist, it's an error that must be corrected immediately
+- All terminal commands must be documented for full traceability

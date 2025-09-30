@@ -1,0 +1,105 @@
+---
+alwaysApply: true
+---
+
+# Code Quality and Development Standards Rules
+
+## Naming Convention Rule
+- **MANDATORY**: Follow comprehensive naming conventions as defined in `naming-conventions.mdc`
+- **Reference**: See `.cursor/rules/naming-conventions.mdc` for detailed naming patterns and guidelines
+- **Core principles**: Use clear, descriptive, and consistent naming conventions
+- **Language-specific**: Follow conventions appropriate for the technology stack
+- **Consistency**: Maintain naming consistency throughout the project
+
+## Code Duplication Prevention Rule
+- **MANDATORY**: Actively identify and eliminate code duplication
+- **Refactoring approach**: 
+  - Extract common functionality into reusable functions/classes
+  - Use inheritance, composition, or mixins when appropriate
+  - Create utility functions for repeated logic
+  - Implement design patterns (Factory, Strategy, Observer, etc.)
+- **Before writing new code**: Always check if similar functionality already exists
+- **Code review focus**: Highlight duplicated code patterns and suggest refactoring
+- **Documentation**: Document reusable components and their intended usage
+
+## Code Similarity Detection and Refactoring Rule (CRITICAL)
+- **MANDATORY**: Always search for similar code patterns before implementing new functionality
+- **Search strategy**:
+  - Use semantic search to find similar code patterns
+  - Look for repeated logic across different files
+  - Identify common data structures and algorithms
+  - Search for similar function signatures and behaviors
+- **Refactoring requirements**:
+  - Extract similar code into shared utilities or base classes
+  - Create generic functions that can handle multiple use cases
+  - Implement configuration-driven approaches when appropriate
+  - Use composition over inheritance for shared behavior
+- **Before implementing**: Always ask "Does similar functionality already exist?"
+- **After implementation**: Review if the new code can be generalized for reuse
+- **Continuous improvement**: Regularly refactor to consolidate similar patterns
+
+## Code Analysis and Research Rule
+- **MANDATORY**: Perform thorough analysis before implementing solutions
+- **Research requirements**:
+  - Investigate known pitfalls and anti-patterns for the technology stack
+  - Research best practices and industry standards
+  - Check for security vulnerabilities and performance implications
+  - Consider edge cases and error handling scenarios
+- **Technology-specific considerations**:
+  - Framework-specific best practices
+  - Language-specific idioms and patterns
+  - Library compatibility and version considerations
+- **Documentation**: Document findings and rationale for chosen approaches
+
+## Standards and Recommendations Compliance Rule
+- **MANDATORY**: Follow established standards and recommendations
+- **Code style**: Adhere to project-specific style guides and linting rules
+- **Architecture patterns**: Follow established architectural patterns (MVC, MVVM, Clean Architecture, etc.)
+- **Security standards**: Implement security best practices (OWASP guidelines, input validation, etc.)
+- **Performance standards**: Optimize for performance and scalability
+- **Accessibility standards**: Follow WCAG guidelines for web applications
+- **Testing standards**: Implement comprehensive testing strategies (unit, integration, e2e)
+
+## Additional Quality Rules
+
+### Error Handling Rule
+- **MANDATORY**: Implement comprehensive error handling
+- **Requirements**:
+  - Use try-catch blocks appropriately
+  - Provide meaningful error messages
+  - Log errors for debugging purposes
+  - Implement graceful degradation
+  - Handle edge cases and boundary conditions
+
+### Documentation Rule
+- **MANDATORY**: Maintain clear and up-to-date documentation
+- **Requirements**:
+  - Document complex algorithms and business logic
+  - Provide clear API documentation
+  - Include usage examples and code comments
+  - Maintain README files with setup and usage instructions
+  - Document architectural decisions (ADRs)
+
+### Testing Rule
+- **MANDATORY**: Implement comprehensive testing strategies
+- **Requirements**:
+  - Write unit tests for critical functionality
+  - Implement integration tests for API endpoints
+  - Create end-to-end tests for user workflows
+  - Maintain high test coverage
+  - Use test-driven development when appropriate
+
+### Performance Rule
+- **MANDATORY**: Optimize for performance and scalability
+- **Requirements**:
+  - Profile code for performance bottlenecks
+  - Implement caching strategies when appropriate
+  - Optimize database queries and API calls
+  - Use lazy loading and code splitting
+  - Monitor and measure performance metrics
+
+## Automatic Reminder
+- These quality rules must be applied to ALL code development, without exception
+- Always consider these rules when reviewing, refactoring, or writing new code
+- Prioritize code quality over speed of delivery
+- Continuously improve code quality through refactoring and optimization
