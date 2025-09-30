@@ -80,7 +80,7 @@ alwaysApply: true
   - Maintain README files with setup and usage instructions
   - Document architectural decisions (ADRs)
 
-### Testing Rule
+### Testing Rule (CRITICAL)
 - **MANDATORY**: Implement comprehensive testing strategies
 - **Requirements**:
   - Write unit tests for critical functionality
@@ -88,6 +88,13 @@ alwaysApply: true
   - Create end-to-end tests for user workflows
   - Maintain high test coverage
   - Use test-driven development when appropriate
+- **Testing and Validation Rule**:
+  - **ALWAYS test** all modifications before considering them complete
+  - **Automated testing** with exploitable reports required
+  - **Ask for clarifications** if ANY element is missing from understanding
+  - **Never assume** - always ask for specific details when unclear
+  - **Generate clear test reports** for all modifications
+  - **Validate** that modifications work as expected and meet requirements
 
 ### Performance Rule
 - **MANDATORY**: Optimize for performance and scalability

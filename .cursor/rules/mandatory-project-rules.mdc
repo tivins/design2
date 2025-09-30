@@ -54,6 +54,16 @@ alwaysApply: true
 - **Update process**: Update wording file before implementing new copy or changing existing text
 - **Verification**: Always check wording file before creating new user-facing text
 
+## Testing and Validation Rule (CRITICAL)
+- **MANDATORY**: ALWAYS test all modifications and changes made to the project
+- **Testing requirement**: Every modification must be tested before considering it complete
+- **Automated testing**: Tests must be automated with exploitable reports
+- **Test coverage**: Ensure comprehensive test coverage for all changes
+- **Clarity requirement**: If ANY element is missing from understanding the request, ask for clarifications
+- **Precision needed**: Never assume or guess - always ask for specific details when unclear
+- **Test reports**: Generate clear, actionable test reports for all modifications
+- **Validation process**: Validate that modifications work as expected and meet requirements
+
 ## Automatic Reminder
 - These rules must be applied to EVERY conversation, without exception
 - If the log file doesn't exist, it's an error that must be corrected immediately
